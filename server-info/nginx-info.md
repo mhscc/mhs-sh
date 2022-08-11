@@ -42,3 +42,6 @@ server {
   }
 }
 ```
+
+### Commands
+- Restart: `sudo systemctl restart nginx`
