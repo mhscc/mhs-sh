@@ -69,7 +69,6 @@ const LinkInfo = ({ info }: { info: ShortLinkInfo }) => {
             onClick={() => {
               try {
                 navigator.clipboard.writeText('https://mhs.sh/' + slug);
-                alert('Copied to clipboard!');
               } catch {}
             }}
           >
