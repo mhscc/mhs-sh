@@ -43,5 +43,5 @@
 4. `sudo ufw allow 'OpenSSH'`
 5. `sudo ufw enable`
 
-Other (Optional)
+### Other (Optional)
 1. `apt install speedtest-cli`
