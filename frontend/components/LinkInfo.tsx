@@ -37,6 +37,7 @@ const LinkInfo = ({ info }: { info: ShortLinkInfo }) => {
             )}
             href={getQrCodeUrl(250)}
             target='_blank'
+            rel='noreferrer'
           >
             <ExternalLinkIcon
               className={classNames(
@@ -57,6 +58,7 @@ const LinkInfo = ({ info }: { info: ShortLinkInfo }) => {
             )}
             href={'https://mhs.sh/' + slug}
             target='_blank'
+            rel='noreferrer'
           >
             mhs.sh/{slug}
           </a>
@@ -79,6 +81,7 @@ const LinkInfo = ({ info }: { info: ShortLinkInfo }) => {
           className={classNames(linkClassnames, 'text-xs')}
           href={link}
           target='_blank'
+          rel='noreferrer'
         >
           {truncate(link, 32)}
         </a>
