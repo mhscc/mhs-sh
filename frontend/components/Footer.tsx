@@ -49,6 +49,7 @@ const Footer = () => {
                   )}
                   href={link}
                   target='_blank'
+                  rel='noreferrer'
                 >
                   {text}
                 </a>
