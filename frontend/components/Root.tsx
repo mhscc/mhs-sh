@@ -6,7 +6,7 @@ const Root = ({ children }: { children: any }) => {
   return (
     <>
       <Head>
-        <title>mhs.sh - MHS' Link Shortener</title>
+        <title>mhs.sh - MHS&apos; Link Shortener</title>
       </Head>
 
       <div className='flex flex-col h-screen'>
