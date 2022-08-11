@@ -16,7 +16,6 @@ const LinkInfo = ({ info }: { info: ShortLinkInfo }) => {
     if (str === undefined || str === null) return 'NULL';
 
     const asStr = str.toString();
-
     return asStr.length <= num ? asStr : asStr.slice(0, num) + '...';
   };
 
