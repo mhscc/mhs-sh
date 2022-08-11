@@ -1,4 +1,4 @@
-﻿namespace Backend.Helpers.Blacklist
+namespace Backend.Helpers.Blacklist
 {
     public class DomainBlacklist
     {
@@ -12,7 +12,9 @@
             if (uri == null)
                 return true;
 
-            return Blacklist.Contains(uri.Host);
+            return Blacklist.Contains(
+                uri.Host.Substring(4)
+                );
         }
 
         private static readonly string[] Blacklist = {
