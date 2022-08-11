@@ -13,7 +13,7 @@ namespace Backend.Helpers.Blacklist
                 return true;
 
             return Blacklist.Contains(
-                uri.Host.Substring(4)
+                uri.Host.Replace("www.", null)
                 );
         }
 
