@@ -132,30 +132,15 @@ namespace Backend.Controllers
         {
             var res = DateTime.UtcNow;
 
-            switch (type)
+            return type switch
             {
-                case ExpType.OneDay:
-                    res.AddDays(1);
-                    break;
-
-                case ExpType.OneWeek:
-                    res.AddDays(7);
-                    break;
-
-                case ExpType.OneMonth:
-                    res.AddMonths(1);
-                    break;
-
-                case ExpType.ThreeMonths:
-                    res.AddMonths(3);
-                    break;
-
-                case ExpType.OneYear:
-                    res.AddYears(1);
-                    break;
-            }
-
-            return res;
+                ExpType.OneDay => res.AddDays(1),
+                ExpType.OneWeek => res.AddDays(7),
+                ExpType.OneMonth => res.AddMonths(1),
+                ExpType.ThreeMonths => res.AddMonths(3),
+                ExpType.OneYear => res.AddYears(1),
+                _ => null
+            };
         }
 
         private async Task<bool> ShrugExists(string shrug)
