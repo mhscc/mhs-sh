@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.17.1" />
-    <PackageReference Include="Ng.UserAgentService" Version="1.0.3" />
+    <PackageReference Include="Ng.UserAgentService" Version="1.1.0" />
     <PackageReference Include="shortid" Version="4.0.0" />
   </ItemGroup>
 
